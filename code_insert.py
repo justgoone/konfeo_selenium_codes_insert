@@ -18,7 +18,7 @@ def add_data():
             add_code(code, value, limit, start, end)
         except selenium.common.exceptions.NoSuchElementException:
             print("Code already exists!")
-            driver.get("https://admin.konfeo.com/events/33705/discounts")
+            driver.get("konfeo.com event discounts screen")
         sleep(3)
         
     f.close()
@@ -45,7 +45,7 @@ def connect():
 
     driver.implicitly_wait(1)
 
-    driver.get("https://admin.konfeo.com/events/33705/discounts")
+    driver.get("konfeo.com event discounts screen")
     return driver
 
 def add_code(code, value, limit, start, end):
